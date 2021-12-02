@@ -11,6 +11,23 @@ html,body{
 nav{
     margin-bottom: 2rem;
 }
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+}
+nav ul li a{
+    position:relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
 h1{
     text-align: center;
     border-bottom: 2px solid #c0c0c0;
@@ -18,6 +35,7 @@ h1{
 h2{
     font-size: 18px;
     letter-spacing: 4px;
+    margin-bottom: 1em;
     padding: 8px;
     border-bottom: 2px solid lightgray;
     text-align: center;
@@ -31,6 +49,7 @@ h2{
     justify-content: center;
     width: 350px;
     height: 350px;
+    margin-top: 2rem;
     margin-bottom: 1em;
     background: transparent;
     border-radius: 50%;
@@ -38,6 +57,91 @@ h2{
 }
 .gender-content{
     background:conic-gradient( pink 64%, lightblue 36%)
+}
+.marker1{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:lightblue;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 20px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.marker2{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:pink;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+/**/
+
+/*Pclass*/
+.pclass-pie-container{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:transparent;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 20px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.pclass-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0px 175px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.pclass-layer::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    transform-origin: 0px 175;
+}
+.pclass-layer:nth-child(1){
+    background-color: gold;
+    transform: translate(175px) rotate(0deg);
+}
+.pclass-layer:nth-child(1)::before{
+    transform: rotate(100deg);
+}
+.pclass-layer:nth-child(2){
+    background-color: silver;
+    transform: translate(175px) rotate(89deg);
+}
+.pclass-layer:nth-child(2)::before{
+    transform: rotate(160deg);
+}
+.pclass-layer:nth-child(3){
+    background-color: brown;
+    transform: translate(175px) rotate(165deg);
+}
+.pclass-layer:nth-child(3)::before{
+    transform: rotate(180deg);
+}
+.pclass-layer:nth-child(4){
+    background-color: brown;
+    transform: translate(175px) rotate(180deg);
+}
+.pclass-layer:nth-child(4)::before{
+    transform: rotate(20deg);
 }
 /**/
 
@@ -47,13 +151,20 @@ h2{
 }
 /**/
 
+/*Chart 4*/
+
+/**/
+
 /*Embarked*/
 .embarked-pie-container{
     position: relative;
     width: 350px;
     height: 350px;
+    margin-top: 2rem;
     margin-bottom: 1em;
     background-color:transparent;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     box-shadow: 0 2px 20px rgba(122, 122, 122, 0.5);
     overflow: hidden;
@@ -62,7 +173,7 @@ h2{
     position: absolute;
     width: 100%;
     height: 100%;
-    transform-origin: 0px 250px;
+    transform-origin: 0px 175px;
     left: 0;
     top: 0;
     overflow: hidden;
@@ -73,11 +184,43 @@ h2{
     height: 100%;
     position: absolute;
     background-color: transparent;
-    transform-origin: 0px 250px;
+    transform-origin: 0px 175px;
     left: 0;
     top: 0;
 }
-.embarked-layer:nth-child(){
-
+.embarked-layer:nth-child(1){
+    background-color: yellow;
+    transform: translate(175px) rotate(0deg);
+}
+.embarked-layer:nth-child(1)::before{
+    transform: rotate(100deg);
+}
+.embarked-layer:nth-child(2){
+    background-color: pink;
+    transform: translate(175px) rotate(1deg);
+}
+.embarked-layer:nth-child(2)::before{
+    transform: rotate(160deg);
+}
+.embarked-layer:nth-child(3){
+    background-color: cyan;
+    transform: translate(175px) rotate(35deg);
+}
+.embarked-layer:nth-child(3)::before{
+    transform: rotate(180deg);
+}
+.embarked-layer:nth-child(4){
+    background-color:coral;
+    transform: translate(175px) rotate(109deg);
+}
+.embarked-layer:nth-child(4)::before{
+    transform: rotate(160deg);
+}
+.embarked-layer:nth-child(5){
+    background-color:coral;
+    transform: translate(175px) rotate(180deg);
+}
+.embarked-layer:nth-child(5)::before{
+    transform: rotate(160deg);
 }
 /**/
