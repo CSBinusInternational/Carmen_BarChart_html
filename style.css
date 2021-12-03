@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
 }
-html,body{
+body{
     font-family: 'Oswald', sans-serif;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
     background-color: whitesmoke;
 }
 nav{
@@ -45,8 +47,6 @@ h2{
 .pie-container{
     margin-top: 16px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 350px;
     height: 350px;
     margin-top: 2rem;
@@ -58,7 +58,7 @@ h2{
 .gender-content{
     background:conic-gradient( pink 64%, lightblue 36%)
 }
-.marker1{
+.gender-marker1{
     position: relative;
     width: 25px;
     height: 25px;
@@ -67,10 +67,10 @@ h2{
     background-color:lightblue;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 20px rgba(122, 122, 122, 0.5);
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
     overflow: hidden;
 }
-.marker2{
+.gender-marker2{
     position: relative;
     width: 25px;
     height: 25px;
@@ -143,16 +143,175 @@ h2{
 .pclass-layer:nth-child(4)::before{
     transform: rotate(20deg);
 }
+.pclass-marker1{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:gold;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.pclass-marker2{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:silver;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.pclass-marker3{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:brown;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
 /**/
 
 /*Survived*/
 .survive-content{
     background:conic-gradient( white 68%, black 38%)
 }
+.survive-marker1{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.survive-marker2{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:black;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
 /**/
 
-/*Chart 4*/
-
+/*Bar chart*/
+.bar-container{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    z-index: 0;
+}
+.amount{
+    position: relative;
+    top: 0px;
+    left: -30px;
+    width: 500px;
+    height: 500px;
+    z-index: 100;
+}
+.amount li{
+    list-style: none;
+    position: relative;
+    left: 0px;
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+.amount li::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    height: 100%;
+    border-bottom: 1px solid black;
+    transform: skewY(45deg);
+    width: 30px;
+}
+.amount li div{
+    position: absolute;
+    width: 80px;
+    font-size: 16px;
+    left: -115px;
+    padding-top: 55px;
+    text-align: right;
+}
+.bar{
+    width: 50px;
+    height: 32%;
+    background-color: paleturquoise;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    z-index: 1000;
+    margin: 0 40px;
+}
+.two{
+    left: 15%;
+    height: 23%;
+    background-color: palevioletred;
+}
+.three{
+    left: 30%;
+    height: 71%;
+    background-color: plum;
+}
+.bar-marker1{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:paleturquoise;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.bar-marker2{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:palevioletred;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.bar-marker3{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:plum;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
 /**/
 
 /*Embarked*/
@@ -222,5 +381,53 @@ h2{
 }
 .embarked-layer:nth-child(5)::before{
     transform: rotate(160deg);
+}
+.embarked-marker1{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:yellow;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.embarked-marker2{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:pink;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.embarked-marker3{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:cyan;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
+}
+.embarked-marker4{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    background-color:coral;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(122, 122, 122, 0.5);
+    overflow: hidden;
 }
 /**/
