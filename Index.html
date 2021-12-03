@@ -49,9 +49,8 @@
 <br>
 
 <!--Graphs-->
-    <div class="container">
-
-        <!--Gender pie chart-->
+<div class="container">
+        <!--Chart 1-->
         <section id="chart1">
           <div>
             <div class="row">
@@ -59,8 +58,10 @@
                 <div class="pie-container gender-content"></div>
               </div>
               <div class="col-lg-4 gender-marker">
-                <div class="marker1"><p></p></div>
-                <div class="marker2"><p></p></div>
+                <div class="gender-marker1">
+                </div>Males<p>There were 466 males on board the ship. </p>
+                <div class="gender-marker2">
+                </div>Females<p>There were 843 females on board the ship</p>
               </div>
             </div>
             <h2>Gender of passengers</h2>
@@ -81,10 +82,15 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, dolorem?</p>
+                <div class="pclass-marker1"></div>
+                1st Class<p>There were 323 passengers who took 1st class</p>
+                <div class="pclass-marker2"></div>
+                Mid class<p>There were 277 passengers who took the Mid class</p>
+                <div class="pclass-marker3"></div>
+                Last Class<p>There were 709 passengers who took the Last class</p>
               </div>
             </div>
-            <h2>Passengers class</h2>
+            <h2>Passengers Class</h2>
           </div>
         </section>
         <!--chart end-->
@@ -97,7 +103,10 @@
                 <div class="pie-container survive-content"></div>
               </div>
               <div class="col-lg-4">
-                
+                <div class="survive-marker1"></div>
+                Survived<p>809 passengers survived this event</p>
+                <div class="survive-marker2"></div>
+                Passed away<p>500 passengers passed away in this event</p>
               </div>
             </div>
             <h2>Passengers that survived</h2> 
@@ -110,11 +119,28 @@
             <div>
               <div class="row">
                 <div class="col-lg-8">
-                  <div></div>
+                  <div class="bar-container container">
+                    <div class="bar one"></div>
+                    <div class="bar two"></div>
+                    <div class="bar three"></div>
+
+                    <ul class="amount">
+                      <li><div>800</div></li>
+                      <li><div>600</div></li>
+                      <li><div>400</div></li>
+                      <li><div>200</div></li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="col-lg-4">
-                  
+                  <div class="bar-marker1"></div>
+                  1st Class<p>There were 323 passengers who took 1st class</p>
+                  <div class="bar-marker2"></div>
+                  Mid class<p>There were 277 passengers who took the Mid class</p>
+                  <div class="bar-marker3"></div>
+                  Last Class<p>There were 709 passengers who took the Last class</p>
                 </div>
+                <h2>Passengers Class Bar Chart</h2>
               </div>
             </div>
         </section>
@@ -134,15 +160,21 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, dolorem?</p>
-              </div>
+                <div class="embarked-marker1"></div>
+                Unknown<p>2 passengerswere unknown where they boarded from</p>
+                <div class="embarked-marker2"></div>
+                Queenstown, New Zealand<p>123 passengers boarded the Titanic from Queenstown, New Zealand</p>
+                <div class="embarked-marker3"></div>
+                Cherbourg, France<p>270 passengers boarded the Titanic from Cherbourg, France</p>
+                <div class="embarked-marker4"></div>
+                Southampton, England<p>914 passengers boarded the Titanic from Southampton, England</p>
             </div>
             <h2>Where passengers embarked from</h2>
           </div>
         </section>
         <!--chart end-->
         <br>
-    </div>
+      </div>
 <!--Graph end-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
